@@ -459,3 +459,133 @@ footer > a:last-child {
     height: 190px;
   }
 }
+/* Featured project case study */
+.case-study .case-study-summary {
+  max-width: 760px;
+  color: var(--text);
+  font-size: clamp(1.15rem, 2.5vw, 1.5rem);
+  line-height: 1.45;
+}
+
+.case-study-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 28px;
+  padding: 22px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.case-study-facts dt,
+.case-study-label {
+  color: var(--blue-light);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.case-study-facts dt {
+  text-transform: uppercase;
+}
+
+.case-study-facts dd {
+  margin-top: 6px;
+  font-size: 0.9rem;
+}
+
+.case-study-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr);
+  gap: 36px;
+  margin-top: 30px;
+}
+
+.case-study h4 {
+  margin: 10px 0 12px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.35;
+}
+
+.case-study-grid section > p:last-child,
+.case-study-decisions,
+.case-study-outcome > p:last-child {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.case-study-decisions {
+  padding-left: 20px;
+}
+
+.case-study-decisions li + li {
+  margin-top: 12px;
+}
+
+.case-study-decisions strong {
+  color: var(--text);
+}
+
+.case-study-outcome {
+  margin-top: 30px;
+  padding: 24px;
+  background: var(--surface-light);
+  border-left: 3px solid var(--blue);
+  border-radius: 0 10px 10px 0;
+}
+
+.case-study-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin-top: 18px;
+}
+
+.case-study-links .project-link {
+  margin: 0;
+}
+
+.case-study a:focus-visible {
+  outline: 2px solid var(--blue-light);
+  outline-offset: 5px;
+  border-radius: 3px;
+}
+
+.case-study-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+.case-study-cta p {
+  flex: 1 1 260px;
+  font-size: 0.95rem;
+}
+
+.case-study-cta .btn {
+  max-width: 100%;
+  padding: 12px 18px;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .case-study-facts,
+  .case-study-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .case-study-outcome {
+    padding: 20px;
+  }
+
+  .case-study-cta .btn {
+    width: 100%;
+  }
+}
